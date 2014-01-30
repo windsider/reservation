@@ -204,11 +204,12 @@ header {
 }
 .glyphicon {
     position:relative;
-    top:1px;
+    top:0.5px;
     display:inline-block;
     font-family:'Glyphicons Halflings';
     font-style:normal;
     font-weight:normal;
+	font-size: 1.25em;
     line-height:1;
     -webkit-font-smoothing:antialiased;
     -moz-osx-font-smoothing:grayscale;
@@ -319,13 +320,13 @@ header {
 }
 }
 #timetable th {
-    border-bottom:0.0714285em solid white;
+    border:0.0714285em solid white;
     border-collapse:collapse;
     height:2.1428571em;
     line-height:1.428571429;
     padding:0 0 0.1428571em 0px;
-    text-align:center;
-    vertical-align:bottom;
+   
+    
     width:21.428571em;
     font-size:100%;
 }
@@ -336,11 +337,11 @@ header {
     height:1.7857142em;
     left:0.5em;
     line-height:1.228571429;
-    margin:0 0 0.57em 0;
-    padding-top:0;
+    margin:0 0 0.62em 0;
+
     position:relative;
     text-transform:uppercase;
-    top:0;
+   
     vertical-align:top;
     width:100%;
 }
@@ -361,7 +362,7 @@ header {
 
 #calendar{
     position: absolute;
-    left: 43.1%;
+    left: 39.9%;
     top:0;
 	
 }
