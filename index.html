@@ -16,18 +16,6 @@
       <![endif]-->  
    </head>
    <body>
-      
-      <!--  jQuery -->
-      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-      <!-- jQuery UI -->
-      <script src="js/jquery-ui-1.10.4.custom.js"></script>	
-      <!--  Bootstrap -->
-      <script src="js/bootstrap.js"></script> 	 
-      
-      <!--Main script-->
-      <script src="js/functionscript.js"></script>
-
-      
       <!--Main container-->
       <div class="container">
          <div class="row">
@@ -37,16 +25,50 @@
             </div>
             <div class="col-xs-6 col-md-4">
                <!--Datepicker-->
-               <div id="calendar"></div>
-            </div>
-            <div class="col-xs-6 col-md-4">
-               <!--Table # 2 for booking according to weekday-->  
-               <div id="wtable"></div>
+               <div id="ui-datepicker-div"></div>
             </div>
          </div>
          <!--Modal window-->
          <div id="myModal" class="modal fade"></div>
+         <!--Login form-->
+         <div id ="log">
+            <form role="form" id ="logform">
+               <input type="text" name="login" class="loginform" placeholder="enter email here" autofocus required>
+               <input type="text" name="password" class="loginform" placeholder="enter password here" required></br>
+               <span>
+               <input type="submit" class="btn log" value = "login">
+               <input type="reset" class="btn log" value = "reset">
+            </form>
+            <input id="reginlog" class="btn log" type ="button" value = "register">
+            </span>
+            <!--Register form-->
+            <form id ="reginform">
+               <input type="text" name="firstname" placeholder="first name here" class="regform"  autofocus required>
+               <input type="text" name="lastname" placeholder="last name here" class="regform" required></br>
+               <input type="email" name="email" placeholder="e-mail address here" class="regform" required>
+               <input type="text" name="phone" placeholder="phone number here" class="regform" required></br>
+               <input type="password" name="password" placeholder="password here" class="regform" required>
+               <input type="password" name="confpassword" placeholder="confirm password here" class="regform" required></br>
+               <button id="regbtn2" class="btn log">register</button>
+               <input type="reset" class="btn log" value="reset">
+               <button id="closereg" class="btn log">close</button>
+            </form>
+         </div>
+         <!--Buttons book and cancel-->
+         <table id ="btnrow">
+            <tr>
+               <td><button id ="book" class="btn">book</button></td>
+               <td><button id ="cnl"  class="btn">cancel</button></td>
+            </tr>
+         </table>
       </div>
-
+      <!--  jQuery -->
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+      <!-- jQuery UI -->
+      <script src="js/jquery-ui-1.10.4.custom.js"></script>	
+      <!--  Bootstrap -->
+      <script src="js/bootstrap.js"></script> 	 
+      <!--Main script-->
+      <script src="js/functionscript.js"></script>
    </body>
 </html>
