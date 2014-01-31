@@ -8,7 +8,7 @@ html {
     /* 2 */
 }
 body {
-    width:54em;
+    width:55em;
     background-color:#eeeeee;
     color:#333333;
     font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -60,8 +60,8 @@ header {
 .container {
     position:relative;
     top:0.7142857em;
-    width:55em;
-    height:24.2em;
+    width:45em;
+    height:24.7em;
     padding-right:15px;
     padding-left:15px;
     margin-right:auto;
@@ -89,9 +89,6 @@ header {
     line-height:1.4;
     filter:alpha(opacity=0);
     visibility:visible;
-}
-#wtable .tooltip {
-    font-size:1.1em;
 }
 .tooltip.in {
     filter:alpha(opacity=90);
@@ -209,7 +206,7 @@ header {
     font-family:'Glyphicons Halflings';
     font-style:normal;
     font-weight:normal;
-	font-size: 1.25em;
+    font-size:1.25em;
     line-height:1;
     -webkit-font-smoothing:antialiased;
     -moz-osx-font-smoothing:grayscale;
@@ -218,6 +215,9 @@ header {
     content:"\e092";
 }
 #timetable {
+    position:relative;
+    top:.2em;
+    left:.5em;
     width:22.58em;
     border:1px solid black;
     border-radius:6px;
@@ -264,10 +264,13 @@ header {
     width:100%;
 }
 .btn.log {
-    width:7.524553em;
+    position:relative;
+    width:7.53em;
     color:#ffffff;
     background-color:#f0ad4e;
     border-color:#eea236;
+    margin:0 -1.8px 0 -1.8px;
+    left:2.25px;
 }
 .btn.log:hover {
     color:#ffffff;
@@ -279,7 +282,9 @@ header {
     width:47%;
     text-align:left;
     display:inline-block;
-    padding-left:0.5em;
+    padding-left:0.5011em;
+    margin:0 -1.5px 0 -1.5px;
+    left:1.5px;
     line-height:1.428571429;
     color:#555555;
     vertical-align:middle;
@@ -295,14 +300,16 @@ header {
     box-shadow:inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 5.1px rgba(102, 175, 233, 0.6);
 }
 #reginform {
+    display:none;
     position:relative;
     width:100%;
 }
 .regform {
     position:relative;
     display:inline-block;
-    width:47.1%;
-    font-size:1em;
+    width:46.5%;
+    margin:0 -1.7px 0 -1.7px;
+    left:1px;
     height:1.2142857em;
     padding-left:0.5em;
     text-align:left;
@@ -311,7 +318,7 @@ header {
     vertical-align:middle;
     background-color:#ffffff;
     background-image:none;
-    border:1px solid #cccccc;
+    border-top:1px solid #cccccc;
     border-radius:0.286em;
     -webkit-box-shadow:inset 0 1px 1px rgba(0, 0, 0, 0.075);
     box-shadow:inset 0 1px 1px rgba(0, 0, 0, 0.075);
@@ -325,8 +332,6 @@ header {
     height:2.1428571em;
     line-height:1.428571429;
     padding:0 0 0.1428571em 0px;
-   
-    
     width:21.428571em;
     font-size:100%;
 }
@@ -338,18 +343,25 @@ header {
     left:0.5em;
     line-height:1.228571429;
     margin:0 0 0.62em 0;
-
     position:relative;
     text-transform:uppercase;
-   
     vertical-align:top;
     width:100%;
 }
 .table-hover > tbody > tr:hover > td {
     background-color:#736F6E;
 }
-#book,#cnl {
-    width:100%;
+#btnrow {
+    width:width:22.58em;
+}
+#book {
+    width:11.7em;
+    color:#ffffff;
+    background-color:#5cb85c;
+    border-color:#4cae4c;
+}
+#cnl {
+    width:10.8em;
     color:#ffffff;
     background-color:#5cb85c;
     border-color:#4cae4c;
@@ -359,93 +371,48 @@ header {
     background-color:#47a447;
     border-color:#398439;
 }
-
-#calendar{
-    position: absolute;
-    left: 39.9%;
-    top:0;
-	
-}
-#wtable {
+#ui-datepicker-div {
     position:absolute;
-    top:0;
-    left:85%;
-    width:8em;
-    height:24.1em;
-    background-color:black;
-    border:1px solid transparent;
-    border-radius:6px;
+    left:52%;
+    top:.2em;
 }
-#wtable table {
-    border:1px solid transparent;
-}
-#wtable table th {
-    color:white;
-    height:0.7142857em;
-    padding:0.3571428em 0.2142857em 0 0.2142857em;
-    font-size:0.7em;
-    text-transform:uppercase;
-}
-#wtable table td {
-    border-collapse:collapse;
-    line-height:1.428571429;
-    padding:0;
-    padding:0;
-    text-align:center;
-}
-#select {
-    height:8em;
-    left:1.1em;
-    margin-bottom:146%;
-    padding:0;
-    position:relative;
-    top:2.1428571em;
-    width:6.5em;
-    line-height:1.428571429;
-    vertical-align:middle;
-    background-color:#ffffff;
-    font-size:.9em;
-    border-radius:4px;
-}
-#wbtn {
-    left:3%;
-    margin:0;
-    position:relative;
-    vertical-align:bottom;
-}
-#sel,#res {
-    width:48%;
-}
-
 /* Parameters for mobile devices */
  @media (max-width:480px) {
     body {
+    width:47em;
     font:.7em/.9em "Helvetica Neue",Arial,Helvetica,sans-serif;
     padding-right:0;
     padding-left:0;
 }
  .container {
-    width:50.6em;
-    height:24.6em;
+    width:43em;
+    height:25em;
 }
  #timetable {
     width:22em;
+    left:0em;
 }
- .loginform {
-    width:10.31em;
+#book {
+    width:11em;
+}
+#cnl {
+    width:10.5em;
+}
+.loginform {
+    width:10.4em;
+    margin:0 -.1071428em 0 -.1071428em;
 }
 .regform {
-    width:46.916%;
+    width:46.46%;
 }
 .btn.log {
-    width:33.3%;
+    width:33.5%;
 }
 .tr {
     font:1.02em "Helvetica Neue", Arial,Helvetica,sans-serif;
 }
-#wtable {
-    left:45em;
-    height:24.55em;
+#ui-datepicker-div {
+    left:22.5em;
 }
  }
 @media screen and (min-width:768px) {
